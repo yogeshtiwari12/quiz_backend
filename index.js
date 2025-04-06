@@ -8,7 +8,12 @@ import Routes from "./Routes/routes.js";
 const app = express();
 const server = http.createServer(app);
 
-app.use(cors());
+app.use(cors(
+  {
+    origin: "https://quizfrontend-eta-five.vercel.app",
+    credentials: true,
+  }
+));
 app.use(bodyParser.json({ extended: true }));
 app.use(bodyParser.urlencoded({ extended: true }));
 
