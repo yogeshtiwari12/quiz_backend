@@ -10,7 +10,7 @@ const server = http.createServer(app);
 
 app.use(cors(
   {
-    // origin: "https://quizfrontend-eta-five.vercel.app",
+    origin: "https://quizfrontend-nu.vercel.app",
     credentials: true,
   }
 ));
